@@ -18,7 +18,7 @@ To access the web based setup, enter the address 4.3.2.1 which will take you to 
 
 In the bottom of the screen, press WiFi to open this screen:
 
-![WiFisetup](./images/xblinds-wifi.jpeg)
+![WiFisetup](xblinds-wifi.jpeg)
 
 Hostname can't be edited, it will always be xblinds-abcdef (defined by MAC address).
 
