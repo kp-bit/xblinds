@@ -18,7 +18,7 @@ To access the web based setup, enter the address 4.3.2.1 which will take you to 
 
 In the bottom of the screen, press WiFi to open this screen:
 
-![WiFisetup](xblinds-wifi.jpg)
+![WiFisetup](xblinds-wifi.jpeg)
 
 Hostname can't be edited, it will always be xblinds-abcdef (defined bu MAC address).
 
@@ -30,7 +30,7 @@ Once connected to your home WiFi, the ESP will no longer publish an AP so you ne
 
 I've put in some dafault stepper values in the code, they will most likely not fit your usage (or mine, for that matter), they are simply there to test that the stepper moves, when buttons are pressed.
 
-![Setup](xblinds-setup.jpg)
+![Setup](xblinds-setup.jpeg)
 
 My recommendation is to attach to the blinds when they're closed and then press "Save as Closed" when the beaded line is seated well and the vertical blinds are closed.
 
@@ -41,7 +41,7 @@ Adjust your blinds, pressing + and - and press "Save as Normal Open" or "Save as
 
 You can test your positions on the main screen:
 
-![Main](xblinds.jpg)
+![Main](xblinds.jpeg)
 
 The positions may need some tweaking after the strings have settled in.
 
@@ -49,7 +49,7 @@ The positions may need some tweaking after the strings have settled in.
 
 My main objective with this project was to have Home Assistant take care of the blinds, instead of me fiddling with my phone to open and close them, which is why I added MQTT to the mix. If you have no need for MQTT, leave this page blank - you may see untested results, if you put in a non-existing server, just saying...
 
-![MQTT](xblinds-mqtt.jpg)
+![MQTT](xblinds-mqtt.jpeg)
 
 The default group is xblinds/all but you can name it whatever you want. I'm using xblinds/windows for my three xblinds working together.
 
@@ -100,11 +100,11 @@ If you want to 3D print this project, go to Thingiverse to download the STLs (li
 
 Here's the xblinds unit assembled: (I'd recommed desoldering the LED's on the ULN2003 stepper driver if you print the case in white filament, you'll know why when you see it).
 
-![3D-print](xblinds-open.jpg)
+![3D-print](xblinds-open.jpeg)
 
 And this is what it looks like mounted on the wall:
 
-![Mounted](xblinds-mounted.jpg)
+![Mounted](xblinds-mounted.jpeg)
 
 
 ### Bill of Materials
