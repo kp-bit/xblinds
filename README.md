@@ -63,6 +63,7 @@ Lastly input a username and password for an account that has write access, as xb
 
 For a super simple integration, that will let the blinds act as a light, try this in your configuration.yaml:
 
+```yaml
 light:
   - platform: mqtt
     name: "xBlinds"
@@ -72,9 +73,10 @@ light:
     payload_off: "close"
     effect_state_topic: "xblinds/window"
     effect_list: [close, open, half, full]
-
+```
 You can also use MQTT directly in your automations/scripts:
 
+```yaml
 scene_shades_open:
   alias: Shades Open
   sequence:
@@ -82,6 +84,7 @@ scene_shades_open:
       data_template:
         topic: "xblinds/window"
         payload_template: "open"
+```
 
 The recognized payload keywords are:
 - close
@@ -100,11 +103,11 @@ If you want to 3D print this project, go to Thingiverse to download the STLs (li
 
 Here's the xblinds unit assembled: (I'd recommed desoldering the LED's on the ULN2003 stepper driver if you print the case in white filament, you'll know why when you see it).
 
-![3D-print](xblinds-open.jpeg)
+![3D-print](xblinds-open.jpg)
 
 And this is what it looks like mounted on the wall:
 
-![Mounted](xblinds-mounted.jpeg)
+![Mounted](xblinds-mounted.jpg)
 
 
 ### Bill of Materials
@@ -133,16 +136,16 @@ Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side, especia
 
 A nice diagram might come later... :)
 
-D1 mini <-> ULN2003
-D1 ------------ IN1
-D2 ------------ IN2
-D3 ------------ IN3
-D4 ------------ IN4
+    D1 mini <-> ULN2003
+    D1 ------------ IN1
+    D2 ------------ IN2
+    D3 ------------ IN3
+    D4 ------------ IN4
 
-+5V to:
-D1 mini: 5V
-ULN2003: +
+    +5V to:
+    D1 mini: 5V
+    ULN2003: +
 
--5V to:
-D1 mini: G
-ULN2003: -
+    -5V to:
+    D1 mini: G
+    ULN2003: -
