@@ -20,7 +20,7 @@ In the bottom of the screen, press WiFi to open this screen:
 
 ![WiFisetup](xblinds-wifi.jpeg)
 
-Hostname can't be edited, it will always be xblinds-abcdef (defined bu MAC address).
+Hostname can't be edited, it will always be xblinds-abcdef (defined by MAC address).
 
 Input your home SSID and password and press save.
 
@@ -28,14 +28,14 @@ Once connected to your home WiFi, the ESP will no longer publish an AP so you ne
 
 ### Adjusting the Blinds
 
-I've put in some dafault stepper values in the code, they will most likely not fit your usage (or mine, for that matter), they are simply there to test that the stepper moves, when buttons are pressed.
+I've put in some default stepper values in the code, they will most likely not fit your usage (or mine, for that matter), they are simply there to test that the stepper moves, when buttons are pressed.
 
 ![Setup](xblinds-setup.jpeg)
 
 My recommendation is to attach to the blinds when they're closed and then press "Save as Closed" when the beaded line is seated well and the vertical blinds are closed.
 
 > Note!
-> Pressing + will turn the pulley counter-clockwise. Be carefull you don't overstretch the line and/or break the gears in the stepper or the blinds.
+> Pressing + will turn the pulley counter-clockwise. Be careful you don't overstretch the line and/or break the gears in the stepper or the blinds.
 
 Adjust your blinds, pressing + and - and press "Save as Normal Open" or "Save as Full Open" when they are in the desired position. A "half" position is calculated behind the scenes.
 
@@ -57,7 +57,7 @@ Input your MQTT server IP address. I'm using Mosquitto on Home Assistant, but I 
 
 Default MQTT port is 1883.
 
-Lastly input a username and password for an account that has write access, as xblinds published a status.
+Lastly input a username and password for an account that has write access, as xblinds publishes a status.
 
 ### Home Assistant Yaml
 
