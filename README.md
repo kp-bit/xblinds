@@ -49,6 +49,7 @@ The positions may need some tweaking after the strings have settled in.
 
 My main objective with this project was to have Home Assistant take care of the blinds, instead of me fiddling with my phone to open and close them, which is why I added MQTT to the mix. If you have no need for MQTT, leave this page blank - you may see untested results, if you put in a non-existing server, just saying...
 
+
 ![MQTT](images/xblinds-mqtt.jpeg)
 
 The default group is xblinds/all but you can name it whatever you want. I'm using xblinds/windows for my three xblinds working together.
