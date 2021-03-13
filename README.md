@@ -155,3 +155,4 @@ A nice diagram might come later... :)
     -5V to:
     D1 mini: G
     ULN2003: -
+    
