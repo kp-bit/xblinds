@@ -2,7 +2,7 @@
 
 The xBlinds project started because I wanted a (cheap) way to motorize my vertical blinds and existing commercial solutions are heavily priced and not getting the best reviews, so a wintery night I started sketching the UI in Notepad.
 
-This project is two-fold; the bin and UI published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
+This project is two-fold; the bin and guide published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
 
 ## Quick Guide
 
