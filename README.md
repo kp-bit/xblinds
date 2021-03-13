@@ -2,7 +2,7 @@
 
 The xBlinds project started because I wanted a (cheap) way to motorize my vertical blinds and existing commercial solutions are heavily priced and not getting the best reviews, so a wintery night I started sketching the UI in Notepad.
 
-This project is two-fold; the bin and UI published here and the STL for the casing going up on Thingiverse.
+This project is two-fold; the bin and UI published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
 
 ## Quick Guide
 
@@ -37,7 +37,7 @@ My recommendation is to attach to the blinds when they're closed and then press 
 > Note!
 > Pressing + will turn the pulley counter-clockwise. Be careful you don't overstretch the line and/or break the gears in the stepper or the blinds.
 
-Adjust your blinds, pressing + and - and press "Save as Normal Open" or "Save as Full Open" when they are in the desired position. A "half" position is calculated behind the scenes.
+Adjust your blinds, pressing + and - and press "Save as Normal Open" or "Save as Full Open" when they are in the desired position. A "half" position is calculated behind the scenes. Allow a couple of seconds between each press.
 
 You can test your positions on the main screen:
 
@@ -52,7 +52,7 @@ My main objective with this project was to have Home Assistant take care of the 
 
 ![MQTT](images/xblinds-mqtt.jpeg)
 
-The default group is xblinds/all but you can name it whatever you want. I'm using xblinds/windows for my three xblinds working together.
+The default group is xblinds/all but you can name it whatever you want. I'm using xblinds/window for my three xblinds working together.
 
 Input your MQTT server IP address. I'm using Mosquitto on Home Assistant, but I guess you could use CloudMQTT or a similar service, if you want.
 
@@ -94,13 +94,18 @@ The recognized payload keywords are:
 - full
 
 The returned status messages are:
+- close
 - open
-- closed
+- half
+- full
+- "hostname" is not connected
+- Reconnected
+- Rebooted
 
 
 ### Thingiverse
 
-If you want to 3D print this project, go to Thingiverse to download the STLs (link coming shortly):
+If you want to 3D print this project, go to Thingiverse to download the STLs here: https://www.thingiverse.com/thing:4792584
 
 Here's the xblinds unit assembled: (I'd recommed desoldering the LED's on the ULN2003 stepper driver if you print the case in white filament, you'll know why when you see it).
 
@@ -130,7 +135,7 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 
 
 #### Power supply:
-Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side, especially if the run at the same time in a group.
+Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.
 
 
 ### Wiring
