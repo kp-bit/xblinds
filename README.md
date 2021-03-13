@@ -131,7 +131,7 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 > Different manufacturers have different dimensions.
 
 * Amazon.de: https://www.amazon.de/-/en/gp/product/B01N9RXGHY
-* AZDelivery: https://www.az-delivery.de/products/d1-mini?_pos=3&_sid=e1e1e37c6&_ss=r
+* AZDelivery: https://www.az-delivery.de/products/d1-mini
 
 
 #### Power supply:
