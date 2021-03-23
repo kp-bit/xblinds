@@ -104,6 +104,15 @@ The returned status messages are:
 - Reconnected
 - Rebooted
 
+### OTA Update
+
+I realized that updating the firmware would be a hassle, if you'd already mounted the unit somewhere more or less accessible, so version 0.4 added OTA support, just navigate to http://IP-address/update to upload and update to newer versions of the firmware.
+
+
+### Next Version Tease
+
+Next version will add support for a tactile button to toggle open/close directly on the xBlinds unit. It will require printing a new lid for the unit and it's completely optional.
+
 
 ### Thingiverse
 
