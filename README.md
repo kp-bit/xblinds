@@ -39,6 +39,8 @@ My recommendation is to attach to the blinds when they're closed and then press 
 
 Adjust your blinds, pressing + and - and press "Save as Normal Open" or "Save as Full Open" when they are in the desired position. A "half" position is calculated behind the scenes. Allow a couple of seconds between each press.
 
+If you want to save your own half position, v0.4 added the "Override Half Open" button to do just that and the "Reset Half" button to revert to the calculated position.
+
 You can test your positions on the main screen:
 
 ![Main](images/xblinds.jpeg)
