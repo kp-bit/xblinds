@@ -150,7 +150,7 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 * AZDelivery: https://www.az-delivery.de/products/d1-mini
 
 #### Tactile Button
-Tactile Push Button Switch 6x6x4.3 (6x6x5 should be fine as well)
+Tactile Push Button Switch 6x6x4.3 (6x6x5 should be fine as well)<br/>
 10 kOhm pull-down resistor
 
 * Amazon.de: https://www.amazon.de/gp/product/B01N67ICEC/
