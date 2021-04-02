@@ -154,7 +154,7 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.
 
 
-### Wiring diagran
+### Wiring diagram
 
 ![Wiring](images/diagram.jpg)
 
