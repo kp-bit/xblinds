@@ -149,6 +149,11 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 * Amazon.de: https://www.amazon.de/-/en/gp/product/B01N9RXGHY
 * AZDelivery: https://www.az-delivery.de/products/d1-mini
 
+#### Tactile Button
+Tactile Push Button Switch 6x6x4.3 (6x6x5 should be fine as well)
+10 kOhm pull-down resistor
+
+* Amazon.de: https://www.amazon.de/gp/product/B01N67ICEC/
 
 #### Power supply:
 Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.
