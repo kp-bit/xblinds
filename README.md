@@ -10,6 +10,11 @@ The bin is compiled for ESP8266 and will run on most variants but most important
 
 Use your favorite flasher to flash the ESP (plenty of guides available for that out there).
 
+## Caution
+
+> If your blinds aren't running smoothly you may damage the stepper or the blinds when trying to pull the beaded string. I had to lube the gears in one of my blinds with some WD-40 for it to run smooth enough for the stepper to pull it. You may want to print the pulley first and just try it with the stepper handheld, to avoid any damage.
+> The stepper is configured for max torque using the FULL4WIRE mode of the AccelStepper library in combination with slow acceleration.
+
 ### Initial Setup
 
 When powering up the ESP for the first time, it will show up as a WiFi AP with the SSID xblinds-abcdef (where "abcdef" are the last 6 digits of the MAC address), use the password "persienne" (Venetian blind in Danish) to log on to the SSID.
@@ -109,9 +114,9 @@ The returned status messages are:
 I realized that updating the firmware would be a hassle, if you'd already mounted the unit somewhere more or less accessible, so version 0.4 added OTA support, just navigate to http://IP-address/update to upload and update to newer versions of the firmware.
 
 
-### Next Version Tease
+### Toogle button
 
-Next version will add support for a tactile button to toggle open/close directly on the xBlinds unit. It will require printing a new lid for the unit and it's completely optional.
+Version 0.5 adds support for a tactile button to toggle open/close directly on the xBlinds unit. It will require printing a new lid (available on Thingiverse) for the unit and it's completely optional.
 
 
 ### Thingiverse
@@ -149,21 +154,7 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.
 
 
-### Wiring
+### Wiring diagran
 
-A nice diagram might come later... :)
+![Wiring](images/diagram.jpg)
 
-    D1 mini <-> ULN2003
-    D1 ------------ IN1
-    D2 ------------ IN2
-    D3 ------------ IN3
-    D4 ------------ IN4
-
-    +5V to:
-    D1 mini: 5V
-    ULN2003: +
-
-    -5V to:
-    D1 mini: G
-    ULN2003: -
-    
