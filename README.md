@@ -50,7 +50,7 @@ You can test your positions on the main screen:
 
 ![Main](images/xblinds.jpeg)
 
-The positions may need some tweaking after the strings have settled in.
+The positions may need some tweaking after the strings have settled in. And you may need to adjust the positions after firmware updates.
 
 ### MQTT
 
@@ -123,7 +123,7 @@ Version 0.5 adds support for a tactile button to toggle open/close directly on t
 
 If you want to 3D print this project, go to Thingiverse to download the STLs here: https://www.thingiverse.com/thing:4792584
 
-Here's the xblinds unit assembled: (I'd recommed desoldering the LED's on the ULN2003 stepper driver if you print the case in white filament, you'll know why when you see it).
+Here's the xblinds unit assembled: (You can safely desolder the LED's on the ULN2003 stepper driver if you should want to).
 
 ![3D-print](images/xblinds-open.jpg)
 
