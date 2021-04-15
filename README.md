@@ -82,6 +82,25 @@ light:
     effect_state_topic: "xblinds/window"
     effect_list: [close, open, half, full]
 ```
+
+Use this configuration to have your xBlinds using Home Assistant's "Cover" integration
+```yaml
+cover:
+  - platform: mqtt
+    name: "Bedroom Blinds"
+    command_topic: "xblinds/window"
+    state_topic: "xblinds/window/status"
+    qos: 0
+    retain: true
+    payload_open: "open"
+    payload_close: "close"
+    state_open: "open"
+    state_closed: "close"
+    optimistic: false
+    value_template: "{{ value }}"
+```
+
+
 You can also use MQTT directly in your automations/scripts:
 
 ```yaml
