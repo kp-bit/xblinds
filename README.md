@@ -83,7 +83,7 @@ light:
     effect_list: [close, open, half, full]
 ```
 
-Use this configuration to have your xBlinds using Home Assistant's "Cover" integration
+Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See [(https://www.home-assistant.io/integrations/cover.mqtt/)]
 ```yaml
 cover:
   - platform: mqtt
