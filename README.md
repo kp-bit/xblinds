@@ -69,21 +69,7 @@ Lastly input a username and password for an account that has write access, as xb
 
 ### Home Assistant Yaml
 
-For a super simple integration, that will let the blinds act as a light, try this in your configuration.yaml:
-
-```yaml
-light:
-  - platform: mqtt
-    name: "xBlinds"
-    state_topic: "xblinds/window/status"
-    command_topic: "xblinds/window"
-    payload_on: "open"
-    payload_off: "close"
-    effect_state_topic: "xblinds/window"
-    effect_list: [close, open, half, full]
-```
-
-Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See [(https://www.home-assistant.io/integrations/cover.mqtt/)]
+Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See https://www.home-assistant.io/integrations/cover.mqtt/
 ```yaml
 cover:
   - platform: mqtt
@@ -95,9 +81,8 @@ cover:
     payload_open: "open"
     payload_close: "close"
     state_open: "open"
-    state_closed: "close"
+    state_closed: "closed"
     optimistic: false
-    value_template: "{{ value }}"
 ```
 
 
@@ -119,11 +104,11 @@ The recognized payload keywords are:
 - half
 - full
 
-The returned status messages are:
+The returned status messages are (changed in v0.7):
 - close
+- closed
 - open
-- half
-- full
+- opened
 - "hostname" is not connected
 - Reconnected
 - Rebooted
