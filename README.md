@@ -105,10 +105,10 @@ The recognized payload keywords are:
 - full
 
 The returned status messages are (changed in v0.7):
-- close
+- closing
 - closed
+- opening
 - open
-- opened
 - "hostname" is not connected
 - Reconnected
 - Rebooted
