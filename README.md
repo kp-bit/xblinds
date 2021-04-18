@@ -93,9 +93,10 @@ scene_shades_open:
   alias: Shades Open
   sequence:
     - service: mqtt.publish
-      data_template:
-        topic: "xblinds/window"
-        payload_template: "open"
+      data:
+        topic: xblinds/window
+        retain: true
+        payload: open
 ```
 
 The recognized payload keywords are:
