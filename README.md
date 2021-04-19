@@ -81,7 +81,9 @@ cover:
     payload_open: "open"
     payload_close: "close"
     state_open: "open"
-    state_closed: "closed"
+    state_opening: "opening"
+    state_closed: "close"
+    state_closing: "closing"
     optimistic: false
 ```
 
