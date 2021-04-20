@@ -161,7 +161,8 @@ Tactile Push Button Switch 6x6x4.3 (6x6x5 should be fine as well)<br/>
 * Amazon.de: https://www.amazon.de/gp/product/B01N67ICEC/
 
 #### Power supply:
-Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.
+Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.<br/>
+**Do not use USB to power the D1 and stepper, the 5V pin will not deliver sufficient current to drive the stepper**
 
 
 ### Wiring diagram
