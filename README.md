@@ -4,6 +4,8 @@ The xBlinds project started because I wanted a (cheap) way to motorize my vertic
 
 This project is two-fold; the bin and guide published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
 
+Please fint the latest version of the binary under releases. In a normal browser, that would be right over there ------>
+
 ## Quick Guide
 
 The bin is compiled for ESP8266 and will run on most variants but most importantly on the D1 mini which will fit into the 3D-printed casing.
@@ -46,6 +48,8 @@ Adjust your blinds, pressing + and - and press "Save as Normal Open" or "Save as
 
 If you want to save your own half position, v0.4 added the "Override Half Open" button to do just that and the "Reset Half" button to revert to the calculated position.
 
+To be able to use tilt, which is introduced in v0.8, you need to at least define the "closed" and "full" presets, as they will be used as 0 and 100 percent open.
+
 You can test your positions on the main screen:
 
 ![Main](images/xblinds.jpeg)
@@ -69,11 +73,11 @@ Lastly input a username and password for an account that has write access, as xb
 
 ### Home Assistant Yaml
 
-Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See https://www.home-assistant.io/integrations/cover.mqtt/
+Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See https://www.home-assistant.io/integrations/cover.mqtt/ and note that v0.8 has added support for "tilt".
 ```yaml
 cover:
   - platform: mqtt
-    name: "Bedroom Blinds"
+    name: "xBlinds Window"
     command_topic: "xblinds/window"
     state_topic: "xblinds/window/status"
     qos: 0
@@ -83,6 +87,9 @@ cover:
     state_open: "open"
     state_closed: "closed"
     optimistic: false
+    tilt_command_topic: "xblinds/window/tilt"
+    tilt_status_topic: "xblinds/window/tilt-state"
+    tilt_optimistic: false
 ```
 
 
@@ -98,6 +105,20 @@ scene_shades_open:
         retain: true
         payload: open
 ```
+
+Or address the tilt as presets, like this:
+
+```yaml
+scene_shades_open:
+  alias: Shades Open 80%
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: xblinds/window/tilt
+        retain: true
+        payload: 80
+```
+
 
 The recognized payload keywords are:
 - close
