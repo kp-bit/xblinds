@@ -4,7 +4,7 @@ The xBlinds project started because I wanted a (cheap) way to motorize my vertic
 
 This project is two-fold; the bin and guide published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
 
-Please fint the latest version of the binary under releases. In a normal browser, that would be right over there ------>
+Please find the latest version of the binary under releases. In a normal browser, that would be right over there ------>
 
 ## Quick Guide
 
