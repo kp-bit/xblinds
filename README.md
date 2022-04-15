@@ -4,7 +4,9 @@ The xBlinds project started because I wanted a (cheap) way to motorize my vertic
 
 This project is two-fold; the bin and guide published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
 
-Please find the latest version of the binary under releases. In a normal browser, that would be right over there ------>
+2022.04.15:
+xBlinds is now feature complete (for my use, at least) and I've released the v1.0 bin and source code - please find all releases and release notes in the right side of your browser.
+There is important information among the release notes not documented in the README.md so make sure you read through them all!
 
 ## Quick Guide
 
@@ -32,6 +34,8 @@ Hostname can't be edited, it will always be xblinds-abcdef (defined by MAC addre
 Input your home SSID and password and press save.
 
 Once connected to your home WiFi, the ESP will no longer publish an AP so you need to find its new IP address in your router.
+
+If at all possible, make sure the SSID you're using is 2.4GHz only, as the ESPs can show random errors and/or disconnects when using shared 2.4/5GHz SSIDs. This is also the case if you have channel interference from neighbors, etc.
 
 ### Adjusting the Blinds
 
@@ -70,6 +74,9 @@ Input your MQTT server IP address. I'm using Mosquitto on Home Assistant, but I 
 Default MQTT port is 1883.
 
 Lastly input a username and password for an account that has write access, as xblinds publishes a status.
+
+If you experience unexpected open/closing of your blinds, you may have some lingering MQTT retained messages in the queue. I can recommend using MQTT Explorer (http://mqtt-explorer.com/) for troubleshooting and clearing of those messages.
+
 
 ### Home Assistant Yaml
 
