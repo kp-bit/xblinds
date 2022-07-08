@@ -80,23 +80,23 @@ If you experience unexpected open/closing of your blinds, you may have some ling
 
 ### Home Assistant Yaml
 
-Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See https://www.home-assistant.io/integrations/cover.mqtt/ and note that v0.8 has added support for "tilt".
+Use this configuration to have your xBlinds using Home Assistant's "Cover" integration. See https://www.home-assistant.io/integrations/cover.mqtt/ and note that v0.8 has added support for "tilt". Note: Syntax has changed in Home Assistant 2022.7
 ```yaml
-cover:
-  - platform: mqtt
-    name: "xBlinds Window"
-    command_topic: "xblinds/window"
-    state_topic: "xblinds/window/status"
-    qos: 0
-    retain: true
-    payload_open: "open"
-    payload_close: "close"
-    state_open: "open"
-    state_closed: "closed"
-    optimistic: false
-    tilt_command_topic: "xblinds/window/tilt"
-    tilt_status_topic: "xblinds/window/tilt-state"
-    tilt_optimistic: false
+mqtt:
+  cover:
+    - name: "xBlinds Window"
+      command_topic: "xblinds/window"
+      state_topic: "xblinds/window/status"
+      qos: 0
+      retain: true
+      payload_open: "open"
+      payload_close: "close"
+      state_open: "open"
+      state_closed: "closed"
+      optimistic: false
+      tilt_command_topic: "xblinds/window/tilt"
+      tilt_status_topic: "xblinds/window/tilt-state"
+      tilt_optimistic: false
 ```
 
 
