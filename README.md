@@ -170,7 +170,7 @@ And this is what it looks like mounted on the wall:
 #### Steppers and drivers:
 ANGEEK 5 pcs. 5V 28BYJ-48 ULN2003 Stepper Motor with Drive Module Board
 
-* Amazon.de: https://www.amazon.de/dp/B07VGV1XFT
+* Amazon affiliate link: https://amzn.to/4bvPhqd
 
 
 #### D1 mini:
@@ -179,14 +179,14 @@ AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
 > Note!
 > Different manufacturers have different dimensions.
 
-* Amazon.de: https://www.amazon.de/-/en/gp/product/B01N9RXGHY
+* Amazon affiliate link: https://amzn.to/49CFDQR
 * AZDelivery: https://www.az-delivery.de/products/d1-mini
 
 #### Tactile Button:
 Tactile Push Button Switch 6x6x4.3 (6x6x5 should be fine as well)<br/>
 10 kOhm pull-down resistor
 
-* Amazon.de: https://www.amazon.de/gp/product/B01N67ICEC/
+* Amazon affiliate link: https://amzn.to/49eNN1K
 
 #### Power supply:
 Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.<br/>
